@@ -470,8 +470,8 @@ for i = 1:length(cell_outlines);
             t_str ='SingleCell_Measurements';
             tab = char(9);
             newline = char(10);
-            file_id = fopen([PathName3 'SingleCell-Data\SingleCell_MEASUREMENTS_' num2str(length(cell_outlines)) ' cells -- ' FileName1(8:end-9)  '.txt'],'w');
-            str2 = ['Cell number' tab 'Cell area [px^2]' tab 'Cell perimeter [px]' tab 'Lobyness' tab 'Curv-vs-Intensity Correlation (Slope)' tab 'Curv-vs-Intensity [+/- fit error (std)]' tab 'Mean Curvature [1/px]' tab 'Std Curvature' tab 'Mean Anisotropy' tab 'Std Anisotropy' tab 'Mean Orientation (1 = || to Normal)' tab 'Std Orientation' tab 'LEC' tab 'Median local-LEC' tab 'Std local-LEC' tab 'Mean Anisotropy normal to wall' tab 'Std Anisotropy normal' tab 'Correlation Coefficient' tab 'Correlation p-value' tab 'Correlation lower .95 CI' tab 'Correlation upper .95 CI' newline];
+            file_id = fopen([PathName3 'SingleCell_MEASUREMENTS_' num2str(length(cell_outlines)) ' cells -- ' FileName1(8:end-9)  '.txt'],'w');
+            str2 = ['Cell number' tab 'Cell area [px^2]' tab 'Cell perimeter [px]' tab 'Lobeyness' tab 'Curv-vs-Intensity Gradient' tab 'Curv-vs-Intensity [+/- fit error (std)]' tab 'Mean Curvature [1/px]' tab 'Std Curvature' tab 'Mean Anisotropy' tab 'Std Anisotropy' tab 'Mean Orientation (1 = || to Normal)' tab 'Std Orientation' tab 'LEC' tab 'Median local-LEC' tab 'Std local-LEC' tab 'Mean Anisotropy normal to wall' tab 'Std Anisotropy normal' tab 'Correlation Coefficient' tab 'Correlation p-value' tab 'Correlation lower .95 CI' tab 'Correlation upper .95 CI' newline];
             str = [t_str newline str2];
             fprintf(file_id,str);
             for p = 1:length(data_singlecell)
@@ -520,7 +520,7 @@ end
         %legend('data', 'center point', 'linear fit')
         text(0.9*min(mean_Curv_data_multi), 0.9*max(mean_I_signal_multi), ['y = mx + n; m = ' num2str(round(Fit(1,1),2)) '; n = ' num2str(round(Fit(1,2),2))])
         %T = table(mean_Curv_data_multi, mean_I_signal_multi, Fit, mean_I_signal_multi-Fit,'VariableNames',{'Curvature','MT intensity','Fit','FitError'})
-        saveas(gcf,[PathName3 'N_ALL_' num2str(FileName2(1:end-4)) '_Curv_Intensity_AllCells'], 'tiff');
+        saveas(gcf,[PathName3 'P_ALL_' num2str(FileName2(1:end-4)) '_Curv_Intensity_AllCells'], 'tiff');
         hold off
         close figure 12
 
@@ -532,7 +532,7 @@ end
         title('Heatmap - Curvature vs. normalized MT intensity')
         xlabel('curvature [necks (concave) --> lobes (convex)]')
         ylabel('norm. intensity [a.u.]')
-        saveas(gcf,[PathName3 'L_ALL_' num2str(FileName2(1:end-4)) '_C-I-Heatmap'], 'tiff');
+        saveas(gcf,[PathName3 'Q_ALL_' num2str(FileName2(1:end-4)) '_C-I-Heatmap'], 'tiff');
         close
         binsize = 0.02;
         bins = -0.4:binsize:1;

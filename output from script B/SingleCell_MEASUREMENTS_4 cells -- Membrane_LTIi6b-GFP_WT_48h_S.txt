@@ -1,5 +1,5 @@
 SingleCell_Measurements
-Cell number	Cell area [px^2]	Cell perimeter [px]	Lobyness	Curv-vs-Intensity Correlation (Slope)	Curv-vs-Intensity [+/- fit error (std)]	Mean Curvature [1/px]	Std Curvature	Mean Anisotropy	Std Anisotropy	Mean Orientation (1 = || to Normal)	Std Orientation	LEC	Median local-LEC	Std local-LEC	Mean Anisotropy normal to wall	Std Anisotropy normal	Correlation Coefficient	Correlation p-value	Correlation lower .95 CI	Correlation upper .95 CI
+Cell number	Cell area [px^2]	Cell perimeter [px]	Lobeyness	Curv-vs-Intensity Gradient	Curv-vs-Intensity [+/- fit error (std)]	Mean Curvature [1/px]	Std Curvature	Mean Anisotropy	Std Anisotropy	Mean Orientation (1 = || to Normal)	Std Orientation	LEC	Median local-LEC	Std local-LEC	Mean Anisotropy normal to wall	Std Anisotropy normal	Correlation Coefficient	Correlation p-value	Correlation lower .95 CI	Correlation upper .95 CI
 1	8115	380.79	1.0426	-1.5205	0.19493	0.017464	0.058853	0.21538	0.076458	0.53812	0.35774	31	16.4	7.3447	0.10977	0.084033	-0.42205	2.9179e-13	-0.51481	-0.31954
 2	9859	437.34	1.0848	-1.1269	0.10359	0.014359	0.072858	0.28851	0.11925	0.64961	0.32694	38.4	14.7	8.8787	0.18158	0.12188	-0.51042	4.3038e-23	-0.58641	-0.42552
 3	13032	526.95	1.1088	-1.8549	0.1337	0.014459	0.058012	0.22172	0.080844	0.79524	0.20777	37.2	15.8	8.7634	0.17997	0.08661	-0.55349	2.5354e-35	-0.61631	-0.48367

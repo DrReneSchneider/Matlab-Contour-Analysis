@@ -1,5 +1,5 @@
 # Matlab-Contour-Analysis
-Matlab scripts to analyze the distribution of microtubules in cotelydon pavement cells of Arabidopsis thaliana as used by Eng et al., Current Biology, 2021
+Matlab scripts to analyze the distribution of microtubules in cotelydon pavement cells of Arabidopsis thaliana as used by Eng et al., Current Biology, 2021 (https://www.sciencedirect.com/science/article/pii/S0960982221006783) and by Schneider et al., Nature Plants, 2022 (https://www.nature.com/articles/s41477-022-01218-7).
 
 These scripts were used to analyze the distribution of microtubules (mCHERRY-TUA5) relative to the plasma membrane (LIi6B-GFP) of cotelydon pavement cells. Two input files are needed for the analysis:
 a) A TIF (16-bit) image of the microtubules at the cell surface. To extract surface information of the microtubules, we used maximum intensity projections (or smooth manifold projections) to reduce the z-stack recordings to single-plane images.
